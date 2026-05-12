@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteveXdemo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=pause" />
+</head>
+
+<body>
+    <div class="gameContainer">
+        <!-- <h3>Welcome to Hawkins <br><br> - Created by Mrittika</h3> -->
+        <button id="pauseBtn" class="btn"><span class="material-symbols-outlined">
+                pause
+            </span>
+            <h3>PAUSE</h3>
+        </button>
+
+        <div id="pauseOverlay-over" class="hidden">
+            <div class="gameOver">
+                <img src="img/GO.png" alt="">
+                <h3 class="go-title">Better Luck In The Right Side Up!</h3>
+
+            </div>
+            <div class="divider_2nd">
+                <span class="skull-iconn">
+                    <i class="fa-solid fa-skull"></i>
+                </span>
+            </div>
+
+            <h2 class="score-display">Your Score: 0</h2>
+            <button onclick="location.reload()" class="btn"><i class="fa-solid fa-rotate-right"></i> Try Again</button>
+        </div>
+
+
+
+
+
+        <div id="pauseOverlay" class="hidden">
+            <div id="pauseBox">
+                <h2>PAUSED</h2>
+                <div class="divider">
+                    <span class="controller-icon"><i class="fa-solid fa-gamepad"></i></span>
+                </div>
+                <div class="btn-group">
+                    <button id="resumeBtn" class="btn"><i class="fa-sharp fa-solid fa-play"></i>Resume</button>
+                    <button id="restartBtn" class="btn"><i class="fa-solid fa-repeat"></i>Restart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="steve">Steve</div>
+        <div id="scoreCont">Your Score: 0</div>
+        <div class="obstacle obstacleAni">Demogorgan</div>
+
+    </div>
+
+    <div class="back">
+        <button id="backBtn" class="btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#e3e3e3">
+                <path d="M560-280 360-480l200-200v400Z" />
+            </svg>Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
